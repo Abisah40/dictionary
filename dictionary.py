@@ -24,7 +24,7 @@ def dictionary(word):
                     'antonyms': words['meanings'][0]['definitions'][0]['antonyms']
                 }
 
-                '''print the information below whenever 'example' is among the information provide by the dictionary'''
+                '''print the information provide below from the above dictionary'''
             
                 if latters:
                     print(f'word : {words['word']}......')
@@ -36,7 +36,7 @@ def dictionary(word):
                     print(f'antonyms : { words['meanings'][0]['definitions'][0]['antonyms']}')
                     print(f'example : {words['meanings'][1]['definitions'][0]['example']}')
 
-                    '''print the information below whenever 'example' is not among the information provide by the dictionary'''
+                    '''print the information below whenever 'phonetics' is not among the information provide by the dictionary and "example" in the exception'''
             except IndexError:
                 #print(f'phonetics : {words['phonetics'][0]['text']}')
                 print(f'word : {words['word']}')
